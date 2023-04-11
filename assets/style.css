@@ -175,6 +175,10 @@ header .logo
 {
   transform: scale(0.5) translateY(-15px);
 }
+.about_col_img
+{
+padding-top: 6rem;
+}
 .areas ul 
 {
   padding-left: 0;
@@ -223,17 +227,28 @@ header .logo
 {
   color: #e34c04; 
 }
-
-.map__img{
+.map__img
+{
   padding-left: 2rem;
 }
-.line {
+.line 
+{
   width: 50px;
   height: 1px;
   background: #fff;
-  margin-bottom: 10px; }
-
-.sec-1 .heading {
+  margin-bottom: 10px; 
+}
+.form
+{
+  padding-right: 2rem;
+}
+.gMaps
+{
+  width: 650px;
+  height: 450px;
+}
+.sec-1 .heading 
+{
   margin-bottom: 70px;
   font-weight: bold;
   color: #fff;
@@ -500,6 +515,7 @@ header .logo
                       .post-entry-1.person-1 .post-entry-1-contents {
                         padding-top: 4rem; }
 
+/* media querys gerais para mobile  */
 @media (max-width: 991px)
 {
   .showcase,
@@ -515,4 +531,22 @@ header .logo
   {
     font-size: 2em;
   }
+  .about_col_img
+  {
+  padding-top: 0;
+  }
+  .sec-1 .img-r {
+    margin-top: 0rem;
+  }
+  .form
+  {
+    padding-right: 1rem;
+  }
+  .gMaps
+{
+  width: 300px;
+}
+.map__img{
+padding: 0;
+}
 }
