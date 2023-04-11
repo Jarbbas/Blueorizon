@@ -1,70 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
-    />
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script> $(function(){ $("head").load("/assets/components/header.html") }); </script>
+<script> $(function(){ $("#menu").load("/assets/components/menu.html") }); </script>
+<script> $(function(){ $("#foot").load("/assets/components/footer.html") }); </script>
+</head>
 
-    <link rel="stylesheet" href="/assets/style.css" />
-    <title>Blueorizon</title>
-  </head>
-  <body>
     <section class="showcase ">
+      <!-- header com logo e butão do menu -->
       <header>
-        <h2 class="logo">Blueorizon</h2>
+        <h2 class="logo"><a href="/index.html"> Blueorizon</a></h2> 
         <div class="toggle"></div>
       </header>
-      <div class="section sec-1">
-        <div class="container">
+      
+        <div class="container section sec-1">
           <div class="row g-0">
-            <div class="col-lg-5 text">
-              <h2 class="heading">
-                Projectos de Engenharia intervém nas áreas
-              </h2>
-              <p>
-                A abordagem da Blueorizon passa por uma equiparação efectiva de
-                um edifício a um sistema físico aberto, com interações
-                permanentes com o ambiente que o rodeia.
-              </p>
-              <p>
-                O processo de trabalho inicia-se geralmente com uma análise das
-                variáveis exteriores relevantes: temperatura do ar exterior,
-                humidade relativa do ar exterior, radiação solar, velocidade e
-                direcção do vento. As características da envolvente exterior do
-                edifício são optimizadas: partindo das soluções construtivas
-                idealizadas pela Arquitectura aplicam-se princípios de
-                minimização de energia, utilização eficiente da iluminação
-                natural e controlo da transmissão térmica para se obter a
-                solução construtiva final.
-              </p>
-              <p>
-                Os sistemas de ventilação e climatização propostos são, em
-                geral, do tipo híbrido, permitindo trocas directas de energia
-                com o exterior quando estas são benéficas e limitando ao mínimo
-                necessário a interacção ambiente interior-ambiente exterior caso
-                esta não represente uma mais-valia. É neste sentido que a
-                Eficiência Energética e a Sustentabilidade representam dois
-                importantes vectores da intervenção da Blueorizon.
-              </p>
-              <a href="#">Conhecer</a>
-            </div>
-            
-            <div class="col-lg-7 ms-auto">
-              <div class="row my-5">
+            <!-- Coluna da direita com texto -->
+            <div class="col-lg-5 text about">
+                <h2 class="heading">
+                  Projectos de Engenharia intervém nas áreas
+                </h2>
+                <p>
+                  A abordagem da Blueorizon passa por uma equiparação efectiva de
+                  um edifício a um sistema físico aberto, com interações
+                  permanentes com o ambiente que o rodeia.
+                </p>
+                <!-- Acordião com opções -->
+                <div class="accordion accordion-flush accordion-1" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                        áreas de trabalho
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse " aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <div class="row justify-content-between">
+                          <div class="col-md-4">
+                            <img src="/assets/images/tools.jpg" alt="Image" class="img-fluid">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body areas">
+                              <ul>
+                              <li class="text-black-50"><a><span>Projecto de Climatização e Ventilação</span></a></li>
+                              <li class="text-black-50"><a><span>Projecto de Energia Solar Térmica</span></a></li>
+                              <li class="text-black-50"><a><span>Projecto de Energia Solar Fotovoltaica</span></a></li>
+                              <li class="text-black-50"><a><span>Projecto de Condicionamento Acústico em Edifícios</span></a></li>
+                              <li class="text-black-50"><a><span>Projecto de Segurança Contra Incêndio em Edifícios</span></a></li>
+                              <li class="text-black-50"><a><span>Projecto de Águas e Esgotos</span></a></li>
+                              <li class="text-black-50"><a><span>Projecto de Instalações de Gás</span></a></li>
+                              <li class="text-black-50"><a><span>Projecto de Instalações Eléctricas</span></a></li>
+                              <li class="text-black-50"><a><span>Projecto de Instalações de Telecomunicações</span></a></li>
+                              <li class="text-black-50"><a><span>Estudo de Verificação da Conformidade Regulamentar RECS e REH</span></a></li>
+                              <li class="text-black-50"><a><span>Certificação Energética REH e RECS</span></a></li>
+                              <li class="text-black-50"><a><span>Estudos de Eficiência Energética</span></a></li>
+                              <li class="text-black-50"><a><span>Simulação computacional em Energy-Plus</span></a></li>
+                                </ul>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div><!-- Acordião com opções -->
+                <p>
+                  O processo de trabalho inicia-se geralmente com uma análise das
+                  variáveis exteriores relevantes: temperatura do ar exterior,
+                  humidade relativa do ar exterior, radiação solar, velocidade e
+                  direcção do vento. As características da envolvente exterior do
+                  edifício são optimizadas: partindo das soluções construtivas
+                  idealizadas pela Arquitectura aplicam-se princípios de
+                  minimização de energia, utilização eficiente da iluminação
+                  natural e controlo da transmissão térmica para se obter a
+                  solução construtiva final.
+                </p>
+          </div>
+          <!--Coluna da esquerda com imagens -->
+          <div class="col-lg-7 pt-5 mt-5 ms-auto"> 
+            <div class="row my-3 about__img">
               <img
                 src="http://blueorizon.pt/mapa2.jpg"
                 alt="Image"
                 class="img-fluid img-r"
               />
-              </div>
-              <div class="row">
+            </div>
+            <div class="row about__img">
               <img
                 src="https://img.fotocommunity.com/linien-chaos-cd43bdc6-a03f-4a44-94f7-43358cd53817.jpg?height=1080"
                 alt="Image"
@@ -72,73 +92,98 @@
               />
             </div>
           </div>
-
-          <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-            <div class="col mb-3">
-              <a href="/" class="d-flex align-items-center link-body-emphasis text-decoration-none text-light">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill text-light mb-3" viewBox="0 0 16 16">
-                  <circle cx="8" cy="8" r="8"/>
-                </svg> <p class="text-light">BLUEORIZON © 2023</p>
-              </a>
+          <!--texto final transversal -->
+          <div class="row text">
+            <p style="max-width: 1090px; margin-left: -1rem" class="text-light">
+              Os sistemas de ventilação e climatização propostos são, em
+              geral, do tipo híbrido, permitindo trocas directas de energia
+              com o exterior quando estas são benéficas e limitando ao mínimo
+              necessário a interacção ambiente interior-ambiente exterior caso
+              esta não represente uma mais-valia. É neste sentido que a
+              Eficiência Energética e a Sustentabilidade representam dois
+              importantes vectores da intervenção da Blueorizon.
+            </p>
+          </div> 
+            
+          <div class="container pt-5 sec-1"> <!-- linha com elementos da equipa e footer -->
+            <div class="row g-0">
+              <div class="col-lg-5 text about">
+                  <h2 class="heading">
+                   A equipa blueorizon
+                  </h2>         
+              </div> 
               
+              <div class="row "><!-- linha com elementos da equipa  -->
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="person">
+                      <img src="https://media.licdn.com/dms/image/C5603AQG9fclITzYhaQ/profile-displayphoto-shrink_200_200/0/1516780461294?e=1686787200&v=beta&t=tGPtHxE5Bl-ngEls3ZAM86cdWY6LBa0twfS87nn5b00" alt="Image" class="img-fluid rounded-circle mx-auto w-50 mb-3">
+                      <h3 class="mb-1 text-light">Eng. Mário Boucinha</h3>
+                      <span class="d-block text-black-50 mb-3">DIRECTOR GERAL</span>
+                      <p class="text-black-50">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                      <ul class="social-2 list-unstyled mb-5">
+                        <li><a class="text-light" href="mailto:mgb@blueorizon.pt">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-at" viewBox="0 0 16 16">
+                          <path d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"/>
+                        </svg>mgb@blueorizon.pt</a></li>
+                        <li><a class="text-light" href="https://www.linkedin.com/in/m%C3%A1rio-boucinha-ab301838/?originalSubdomain=pt">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                          </svg>Linkedin</a></li>
+                      </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="person">
+                      <img src="/assets/images/person_6.jpg" alt="Image" class="img-fluid rounded-circle mx-auto w-50 mb-3">
+                      <h3 class="mb-1 text-light">Eng. Nsilu Batista</h3>
+                      <span class="d-block text-black-50 mb-3">DEPARTAMENTO TÉCNICO</span>
+                      <p class="text-black-50">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                      <ul class="social-2 list-unstyled mb-5">
+                        <li><a class="text-light" href="mailto:nbr@blueorizon.pt">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-at" viewBox="0 0 16 16">
+                          <path d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"/>
+                        </svg>nbr@blueorizon.pt</a></li>
+                        <li><a class="text-light" href="https://www.linkedin.com/in/nsilu-batista-aa201234/?originalSubdomain=pt">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                          </svg>Linkedin</a></li>
+                      </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="person">
+                      <img src="/assets/images/person_2.jpg" alt="Image" class="img-fluid rounded-circle mx-auto w-50 mb-3">
+                      <h3 class="mb-1 text-light">Eng. Sandra Oliveira</h3>
+                      <span class="d-block text-black-50 mb-3">DEPARTAMENTO TÉCNICO</span>
+                      <p class="text-black-50">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                      <ul class="social-2 list-unstyled mb-5">
+                        <li><a class="text-light" href="mailto:smo@blueorizon.pt">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-at" viewBox="0 0 16 16">
+                          <path d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"/>
+                        </svg>smo@blueorizon.pt</a></li>
+                        <!-- <li><a class="text-light" href="https://www.linkedin.com/in/nsilu-batista-aa201234/?originalSubdomain=pt">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                          </svg>Linkedin</a></li> -->
+                      </ul>
+                    </div>
+                </div>    
+              </div><!-- linha com elementos da equipa  -->
+              
+              <!-- footer -->
+              <p class="heading mt-5"></p>
+              <div id="foot"></div> 
             </div>
-        
-            <div class="col mb-3">
-        
-            </div>
-        
-            <div class="col mb-3 ">
-              <h5 class="text-light">Navegação</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Quem Somos</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Projetos</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Contactar</a></li>
-              </ul>
-            </div>
-        
-            <div class="col mb-3">
-              <h5>Section</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light">Features</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light">Pricing</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light">FAQs</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light">About</a></li>
-              </ul>
-            </div>
-        
-            <div class="col mb-3">
-              <h5>Section</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light">Features</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light">Pricing</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light">FAQs</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-light">About</a></li>
-              </ul>
-            </div>
-          </footer>
-        </div>
-      </div>
+          </div>
     </section>
 
-    <div class="menu">
-      <ul>
-        <li><a href="/index.html">INÍCIO</a></li>
-        <li><a href="/about.html">QUEM SOMOS</a></li>
-        <li><a href="#">PROJETOS</a></li>
-        <li><a href="#">CONTACTOS</a></li>
-      </ul>
-    </div>
+    <div id="menu"></div>
 
 
+ <!--===== SCROLL REVEAL =====-->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ <script src="https://unpkg.com/scrollreveal"></script>
+ <script src="/assets/javascript.js"></script>
 
-    <script src="/assets/javascript.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
