@@ -16,5 +16,6 @@ const sr = ScrollReveal({
 
 sr.reveal('.about, .home, .projects',{delay: 100}); 
 sr.reveal('.about__img, .project__img, .map__img',{delay: 500}); 
-sr.reveal('.home__social-icon',{ interval: 200}); 
-sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+
+ $(function(){ $("#menu").load("/assets/components/footer.html") }); 
+ $(function(){ $("#foot").load("/assets/components/footer.html") }); 
